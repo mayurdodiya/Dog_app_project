@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap" rel="stylesheet">
+
+    <!-- Fone awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+
+    <link href="https://fonts.cdnfonts.com/css/asimov" rel="stylesheet">
+
+
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="style.css">
+    <title>Page 1</title>
+</head>
+
+<body>
+    <div id="box">
+        <div id="box1">
+            <div id="boxA" class="a"><small style="color: #fff;">9:41</small></div>
+            <div id="boxB">
+                <div class="a"><small><i class="fa-sharp fa-solid fa-signal"></i></small></div>
+                <div class="a"><small><i class="fa-sharp fa-solid fa-wifi"></i></small></div>
+                <div class="a"><small><i class="fa-solid fa-battery-full"></i></small></div>
+            </div>
+        </div>
+
+
+        <!-- 2nd slider -->
+
+        <div class="slideshow-container">
+
+            <div id="box2A" class="mySlides fade"><img class="dog_img" src="img/dog-png.png"></div>
+            
+            <div id="box2A" class="mySlides fade">
+                <img class="cat_img" src="img/cat1.png">
+            </div>
+            
+            <div id="box2A" class="mySlides fade">
+                <img class="bird_img" src="img/bird4.png" style="width:100%">
+            </div>
+
+        </div>
+
+        <br>
+        <br>
+        <br>
+
+        <div>
+            <div id="box3" style="color: #fff;">
+                <span><b> Ready to make a</b></span><br>
+                <span class="box3b"><b>new friend</b></span>
+            </div>
+        </div>
+
+        <div id="box4">
+            <span class="color">Countrary to popular belief,Lorem ipsum</span><br>
+            <span class="color">amet consectetur adipisicing lorem</span><br>
+            <span class="color">adipisicing lorem.</span>
+        </div>
+
+        <br>
+
+        <div style="text-align:center">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+
+        <!-- 2nd slider end -->        
+
+
+        <div id="box5">
+            <button class="box5a"><a href='./index1.html'> Get Started</a></button>
+        </div>
+    </div>
+
+    
+    <!-- 2nd slider Script -->
+    <script>
+        let slideIndex = 0;
+        showSlides();
+        
+        function showSlides() {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("dot");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) { slideIndex = 1 }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+            setTimeout(showSlides, 2000); // Change image every 2 seconds
+        }
+        </script>
+    <!-- 2nd slider Script end -->
+
+
+</body>
+
+</html>

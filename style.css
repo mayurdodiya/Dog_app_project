@@ -1,0 +1,289 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* ----------box 1---------- */
+
+/* body {
+    margin: 0;
+    padding: 0;
+} */
+
+#box {
+    background-color: #e28b35;
+    width: 100%;
+    height: 100vh;
+    /* border: 6px solid #eb9c41; */
+    /* border-radius: 46px; */
+    margin: auto;
+    overflow-y: scroll;
+}
+
+.box::-webkit-scrollbar {
+    display: none;
+}
+
+#box1 {
+    display: flex;
+    justify-content: space-between;
+    height: 15vh;
+    font-family: 'Inter', sans-serif;
+    margin-top: 10px;
+    opacity: 0.9;
+    font-size: smaller;
+    color: #fff;
+}
+
+#boxA {
+    margin-left: 25px;
+}
+
+#boxB {
+    display: flex;
+    margin-right: 25px;
+}
+
+.a {
+    margin-right: 5px;
+}
+
+
+
+/* -----------box 2----------- */
+
+#box2 {
+    display: flex;
+    justify-content: space-around;
+}
+
+#box2A {
+    width: 70vw;
+    height: 70vw;
+    background-color: #f9c28d;
+    margin: 17px 43px 0px 43px;
+    border-radius: 55%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.box2img {
+    width: 140%;
+    height: 140%;
+}
+
+.dog_img{
+    padding-right: 25px;
+    width: 120%;
+    height: 120%;
+}
+
+.cat_img {
+    margin-left: 40px;
+    width: 80%;
+    height: 100%;
+}
+
+.bird_img {
+    width: 110%;
+    height: 100%;
+}
+
+
+/* ----------box 3---------- */
+
+#box3 {
+    text-align: center;
+    margin-top: 15px;
+    font-size: larger;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.box3b {
+    margin-left: 20px;
+}
+
+
+/* ----------Box 4---------- */
+
+#box4 {
+    margin-top: 6px;
+    font-family: 'Inter', sans-serif;
+    text-align: center;
+    opacity: 0.7;
+    font-size: 11px;
+    line-height: 1.5;
+    color: #fff;
+}
+
+
+/* ------------Slider btn---------- */
+
+.slider_btn {
+    width: 18vw;
+    margin: 10px auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.btnbtn {
+    width: 15px;
+    height: 15px;
+    border: 1px solid #e28b35;
+    border-radius: 50%;
+    background-color: #fff;
+}
+
+
+
+/* ----------Slider 2nd--------- */
+
+/* * {
+    box-sizing: border-box;
+} */
+
+/* body {
+    font-family: Verdana, sans-serif;
+} */
+
+.mySlides {
+    display: none;
+}
+
+img {
+    vertical-align: middle;
+}
+
+/* Slideshow container */
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+
+/* Caption text */
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+    height: 10px;
+    width: 10px;
+    margin: 0 2px;
+    background-color: #e9be94;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active {
+    background-color: #ffffff;
+}
+
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+    .text {
+        font-size: 11px
+    }
+}
+
+/* ----------Slider 2nd end --------- */
+
+
+
+/* ----------box 5---------- */
+
+#box5 {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+
+}
+
+.box5a {
+    width: 230px;
+    height: 58px;
+    border: 1px solid #ffffff;
+    border-radius: 14px;
+    background-color: #ffffff;
+    box-shadow: 2px 15px 119px #70635d;
+    
+}
+
+.box5a a {
+    text-decoration: none;
+    color: #91614a;
+    font-weight: bolder;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+
+
+/* ----------Media Quary---------- */
+
+@media only screen and (min-width: 321px) and (max-width: 375px) {
+    #box1 .a {
+        font-size: medium;
+    }
+
+    #box4 {
+        font-size: 13px;
+    }
+}
+
+@media only screen and (min-width: 376px) and (max-width: 425px) {
+    #box1 .a {
+        font-size: large;
+    }
+
+    #box4 {
+        font-size: 15px;
+    }
+
+    #box3 {
+        font-size: x-large;
+    }
+
+    .box5a {
+        width: 300px;
+        height: 58px;
+    }
+    
+}
